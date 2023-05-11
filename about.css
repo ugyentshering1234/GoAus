@@ -1,0 +1,18 @@
+a:is(:link, :active, :visited).active{
+    background-color: white;
+    border-radius: 10px;
+  }
+
+#navbarSupportedContent ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+#navbarSupportedContent ul li:hover::after{
+  width: 100%;
+}

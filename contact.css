@@ -1,0 +1,59 @@
+a:is(:link, :active, :visited).active{
+    background-color: white;
+    border-radius: 10px;
+  }
+
+#contact {
+    font-size: 30px;
+}
+
+#email {
+    font-size: 15px;
+}
+
+#phone {
+    font-size: 15px;
+}
+
+#icons {
+    font-size: 30px;
+    justify-content: center;
+}
+
+#btnFacebook, #btnInstagram, #btnTwitter, #btnSkype {
+    padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    #btnFacebook, #btnInstagram, #btnTwitter, #btnSkype {
+        font-size: 20px;
+    }
+    #contact {
+        font-size: 20px;
+    }
+    #email {
+        font-size: 12px;
+    }
+    
+    #phone {
+        font-size: 12px;
+    }
+    #icons {
+        font-size: 20px;
+        justify-content: space-around;
+    }
+}
+
+#navbarSupportedContent ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  
+#navbarSupportedContent ul li:hover::after{
+width: 100%;
+}
